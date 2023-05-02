@@ -1,12 +1,7 @@
-export default function menuPage() {
-  const content = document.querySelector('#content');
-
-  const container = document.createElement('div');
-  container.id = 'container';
-
+export default function menuPage(mainSection) {
   const title = document.createElement('h1');
   title.innerText = 'Menu';
-  container.appendChild(title);
+  mainSection.appendChild(title);
 
   const menuList = document.createElement('ul');
   let menuItems = ['Americano', 'Long Black', 'Brewed Coffee', 'Cold Brew'];
@@ -16,7 +11,5 @@ export default function menuPage() {
     listItem.innerText = item;
     menuList.appendChild(listItem);
   });
-  container.appendChild(menuList);
-  
-  content.appendChild(container);
+  mainSection.appendChild(menuList);
 } 

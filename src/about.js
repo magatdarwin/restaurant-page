@@ -1,12 +1,7 @@
-export default function aboutPage() {
-  const content = document.querySelector('#content');
-
-  const container = document.createElement('div');
-  container.id = 'container';
-
+export default function aboutPage(mainSection) {
   const title = document.createElement('h1');
   title.innerText = 'About';
-  container.appendChild(title);
+  mainSection.appendChild(title);
 
   const infoList = document.createElement('ul');
   const contactNumber = document.createElement('li');
@@ -17,6 +12,5 @@ export default function aboutPage() {
   infoList.appendChild(contactNumber);
   infoList.appendChild(address);
 
-  container.appendChild(infoList);
-  content.appendChild(container);
+  mainSection.appendChild(infoList);
 }

@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+#topnav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+#topnav > a {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 20px;
+}
+
+#topnav > a:hover {
+  background-color: brown;
+}
