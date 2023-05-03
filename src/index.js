@@ -22,8 +22,6 @@ function switchTab(event, mainSection) {
 }
 
 function index() {
-  const content = document.querySelector('#content');
-
   const header = document.createElement('header');
   const topNav = document.createElement('nav');
   topNav.id = 'topnav'; 

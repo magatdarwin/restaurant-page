@@ -5,7 +5,7 @@ export default function homePage(mainSection) {
   mainSection.appendChild(restaurantName);
 
   const description = document.createElement('p');
-  description.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima totam expedita blanditiis quia dignissimos reiciendis modi dolorum accusamus labore, harum et odit facere temporibus repellat consectetur, fugiat pariatur at.';
+  description.innerText = 'Serving only the finest black coffee for that much needed kick-start!';
 
   mainSection.appendChild(description);
 }

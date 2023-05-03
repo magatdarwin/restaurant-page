@@ -1,5 +1,14 @@
 body {
   margin: 0;
+  height: 100vh;
+  background-image: url('./coffee-background.jpg');
+  background-size: cover;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 #topnav {
@@ -16,5 +25,13 @@ body {
 }
 
 #topnav > a:hover {
-  background-color: brown;
+  background-color: rgb(72, 72, 72);
+}
+
+#page {
+  align-self: center;
+  width: 30%;
+  padding: 10px 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
