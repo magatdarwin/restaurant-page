@@ -55,6 +55,15 @@ function index() {
   }));
 
   homePage(mainSection);
+
+  const footer = document.createElement('footer');
+  footer.innerText = 'Background image by ';
+  const attribution = document.createElement('a');
+  attribution.innerText = 'Janko Ferlič';
+  attribution.href = 'https://unsplash.com/@itfeelslikefilm';
+  footer.appendChild(attribution);
+  content.appendChild(footer);
+
 }
 
 index();
